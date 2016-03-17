@@ -1,0 +1,217 @@
+/* Styles go here */
+
+.box-style{
+  width:70px;
+  height:70px;
+  /*background-color:purple;*/
+ float:left;
+  clear:both;
+  position:absolute;
+  border-radius:50%;
+  z-index:99;
+  
+}
+.box-style img{
+  width:70px;
+  max-height:70px;
+}
+.anim-pan{
+  position:relative;
+  height:500px;
+  box-sizing:border-box;
+   height:100vh;
+  background-color:#000;
+  overflow:hidden;
+  background-image:url('https://lh3.googleusercontent.com/ZuEFgWIfsPnCjw0cWy8y2JK64mxScn_ZsuNvWtGPsO0BdwGS5ib2dHG3KdnhcJRc0GI=h900');
+  background-size:contain;
+
+}
+.box2,.box5{
+  left:0px;
+  top:200px;
+ /* background-color:#0cf;*/
+}
+
+.box3,.box6{
+  left:150px;
+  top:250px;
+  /*background-color:#09f;*/
+}
+
+.box4.box7{
+  left:200px;
+  top:10px;
+ /* background-color:orange;*/
+}
+
+
+
+.box1,.box8{
+  left:200px;
+  top:150px;
+  /*background-color:#09f;*/
+}
+
+.box9{
+  left:100px;
+  top:70px;
+ /* background-color:orange;*/
+}
+.sptep-2-boxes{
+  display:none;
+}
+.blasting{
+  left:50%;
+  width:120px;
+  height:120px;
+  position:absolute;
+  z-index:100;
+  display:none;
+  z-index:1001;
+}
+#stop{
+  position:absolute;
+  bottom:0;
+}
+#gun{
+  width:120px;;
+  height:250px;
+  background-size:cover;
+  
+  position:absolute;
+  bottom:-30px;
+  left:50%;
+  cursor:move;
+  background-image:url(http://s23.postimg.org/vahk4i54b/Untitled_1.png);
+  z-index:20;
+ 
+}
+.gun-trigger{
+  position:absolute;
+  bottom:40px;
+  margin-left:35px;
+  z-index:50;
+    border-radius:50%;
+  padding:10px 7px;
+  outline:none;
+}
+.guli{
+  
+   width:30px;
+  height:50px;
+  background-size:cover;
+  background-image:url(http://s30.postimg.org/oizbqp8vx/Bullet_128.png);
+  position:absolute;
+  bottom:0px;
+  left:53%;
+  margin:0;padding:0;
+  display:block;
+z-index:10;
+
+}
+.menu-bar{
+  background:rgba(48, 142, 11, 0.76);
+  height:auto;
+  border-radius:4px;
+  border:1px solid green;
+  padding:10px;
+}
+.menu-bar ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.menu-bar ul>li{
+  color:#fff;
+  width:auto;
+ 
+  display:inline-block;
+  font-size:18px;
+height:auto;
+  padding-left:10px;
+  padding-right:10px;
+  border-right:1px solid green;
+
+}
+.menu-bar ul li:last-child{
+  
+  border:none;
+  
+}
+.menu-bar ul>li .point{
+  font-size:50px;
+  margin:0px;
+  padding:0px;
+  clear:both;
+}
+.menu-label{
+  display:block;
+  font-weight:bold;
+  margin:0px;
+}
+.bullets{
+  margin:0;
+  padding:0;
+  min-width:250px;
+}
+.bullets ul{
+  margin:0;
+  padding:0;
+
+}
+.bullets ul li.bullet-item{
+  width:30px;
+  height:50px;
+  background-size:cover;
+  display:inline-block;
+border:none;
+  background-image:url(http://s30.postimg.org/oizbqp8vx/Bullet_128.png);
+
+}
+.menu-bar-left{
+  bottom:10px;
+  position:absolute;
+}
+.replay-btn img{
+  width:50px;
+  heihgt:50px;
+}
+#zero-bullet{
+  display:none;
+}
+.modal-content{
+  background:rgba(48, 142, 11, 0.76);
+  
+  color:#fff;
+}
+.modal-header{
+  border-bottom:1px solid green;
+}
+.modal-footer{
+  border-top:1px solid green;
+}
+.btn-light{
+  background:hsla(39, 100%, 50%, .6);
+}
+
+.btn-origin{
+  background:hsla(104, 100%, 50%, 0.6);
+  color:#fff;
+}
+.btn-origin:hover{
+  background:transparent;
+   color:#ff8c00;
+}
+.rb-describe{
+ 
+  color:#ff8c00;
+  font-size:16px;
+}
+.score-card{
+  font-size:26px;
+  text-align:center;
+    text-shadow:1px 1px 1px black;
+}
+
+
+

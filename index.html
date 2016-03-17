@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <section class="container-fluid">
+        <div class="col-md-12 well anim-pan  ">
+          <div class="blasting">
+            <img src="http://www.animatedimages.org/data/media/90/animated-fire-image-0087.gif" />
+          </div>
+          <div class="box1 box-style">
+            <img src="http://icons.iconarchive.com/icons/femfoyou/angry-birds/1024/angry-bird-icon.png" />
+          </div>
+          <div class=" box-style box2">
+            <img src="http://icons.iconarchive.com/icons/femfoyou/angry-birds/1024/angry-bird-icon.png" />
+          </div>
+          <div class=" box-style box3">
+            <img src="http://img01.deviantart.net/29e3/i/2011/331/1/1/red_angry_bird_icon_by_riverkpocc-d4hgse3.png" />
+          </div>
+          <div class=" box-style box4">
+            <img src="http://icons.iconarchive.com/icons/femfoyou/angry-birds/1024/angry-bird-icon.png" />
+          </div>
+          
+          
+          <div class="box5 box-style sptep-2-boxes">
+            <img src="http://1.bp.blogspot.com/-Zfo9NyGTKw0/TgY52xGvxaI/AAAAAAAAAhU/Bh5JAaokHAU/s1600/angry-bird-icon.png" />
+          </div>
+          <div class=" box-style box6 sptep-2-boxes">
+            <img src="http://icons.iconarchive.com/icons/femfoyou/angry-birds/1024/angry-bird-icon.png" />
+          </div>
+          <div class=" box-style box7 sptep-2-boxes">
+            <img src="http://img01.deviantart.net/29e3/i/2011/331/1/1/red_angry_bird_icon_by_riverkpocc-d4hgse3.png" />
+          </div>
+          <div class=" box-style box8 sptep-2-boxes">
+            <img src="http://1.bp.blogspot.com/-Zfo9NyGTKw0/TgY52xGvxaI/AAAAAAAAAhU/Bh5JAaokHAU/s1600/angry-bird-icon.png" />
+          </div>
+          <div class=" box-style box9 sptep-2-boxes">
+            <img src="http://img01.deviantart.net/29e3/i/2011/331/1/1/red_angry_bird_icon_by_riverkpocc-d4hgse3.png" />
+          </div>
+          <!--  
+        <button id="stop" class="btn btn-success">Stop </button>
+-->
+          <div class="col-md-12 menu-bar-left">
+            <div class="col-md-5">
+              <div class="menu-bar">
+                <ul>
+                  <li>
+                    <span class="menu-label">Score:</span>
+                    <div class="point">0</div>
+                  </li>
+                  <li>
+                    <span class="menu-label">Bullets:</span>
+                    <div class="bullets">
+                      <ul id="bullet-list">
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                        <li class="bullet-item"></li>
+                      </ul>
+                      <p id="zero-bullet">0 Bullet</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="menu-label">Play Again:</span>
+                    <div>
+                      <a href="#" class="replay-btn">
+                        <img src="https://cdn0.iconfinder.com/data/icons/ie_Bright/512/play_green.png" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div id="gun">
+            <button class="btn btn-danger btn-sm gun-trigger">Guli</button>
+          </div>
+        </div>
+        <div class="guli"></div>
+      </section>
+   
+    </div>
+    <div class="sounds">
+      <audio id="shoot" src="http://soundbible.com/mp3/ie_shot_gun-luminalace-770179786.mp3" type="audio/mpeg"></audio>
+      <audio id="blasting-sound" src="http://soundbible.com/mp3/Explosion 2-SoundBible.com-1641389556.mp3" type="audio/mpeg"></audio>
+      <audio id="bird-sound" src="http://soundbible.com/mp3/Sunny Day-SoundBible.com-2064222612.mp3" loop="" autoplay="" type="audio/mpeg"></audio>
+    </div>
+    <!--================ INTRO MODAL==================== -->
+    <div class="modal fade" id="introModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">About Game</h4>
+          </div>
+          <div class="modal-body">
+            <p class="rb-describe">Use the unique powers of the Gun and Bullet to destroy the greedy Angry Birds! Here Life of angry birds are in danger. </p>
+            <p>Simply REVERSE scenerio of Angry Bird Game. Muuhh ha ha ha :D</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning btn-light" data-dismiss="modal">Close</button>
+         
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--================ INTRO MODAL ENDSS==================== -->
+    
+        <!--================ INTRO MODAL==================== -->
+    <div class="modal fade" id="scoreModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Congratulation Buddy!</h4>
+          </div>
+          <div class="modal-body">
+            <h3 class="score-card">
+              Your score is <span id="score-point">0</span>
+            </h3>
+          </div>
+      
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--================ INTRO MODAL ENDSS==================== -->
+  </body>
+
+</html>

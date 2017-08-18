@@ -1,5 +1,7 @@
 /* Styles go here */
-
+body {
+background-color: #88f5fb;
+}
 .box-style{
   width:70px;
   height:70px;
@@ -23,7 +25,7 @@
   background-color:#000;
   overflow:hidden;
   background-image:url('https://lh3.googleusercontent.com/ZuEFgWIfsPnCjw0cWy8y2JK64mxScn_ZsuNvWtGPsO0BdwGS5ib2dHG3KdnhcJRc0GI=h900');
-  background-size:contain;
+  background-size:cover;
 
 }
 .box2,.box5{
@@ -212,6 +214,11 @@ border:none;
   text-align:center;
     text-shadow:1px 1px 1px black;
 }
-
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
